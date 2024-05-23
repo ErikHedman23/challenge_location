@@ -6,7 +6,7 @@ enum Location {
     Anonymous,
     Known(f64, f64), //Lat and Long
 }
-
+//This is demonstrating how to create your own 'display trait'
 impl Location {
     fn display(&self) {
         match *self {
@@ -18,7 +18,7 @@ impl Location {
         }
     }
 }
-
+//This shows how to use the Display trait on an enum
 impl fmt::Display for Location {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
