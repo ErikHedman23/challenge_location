@@ -2,7 +2,7 @@
 enum Location {
     Unknown,
     Anonymous,
-    Known(f64, f64),
+    Known(f64, f64), //Lat and Long
 }
 
 impl Location {
